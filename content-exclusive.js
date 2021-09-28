@@ -46,3 +46,20 @@ function closeAuthNoti() {
         $('section.login-notification').hide();
     })
 }
+
+function playVideo() {
+    var iframe = document.querySelector('iframe');
+    var player = new Vimeo.Player(iframe);
+
+    player.on('play', function() {
+        $("#playButton").fadeOut();
+    });
+
+    player.on('pause', function() {
+        $("#playButton").fadeIn();
+    });
+
+    player.getVideoTitle().then(function(title) {
+        console.log('title:', title);
+    });
+}
