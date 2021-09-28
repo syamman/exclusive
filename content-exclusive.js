@@ -1,7 +1,6 @@
 $(document).ready(function () {
     var carousel_config = {
-        // autoplay: true,
-        // autoPlay: 5000,
+        loop: false,
         autoHeight: true,
         pagination: true,
         nav: false,
@@ -12,10 +11,11 @@ $(document).ready(function () {
         ...carousel_config,
         responsive: {
             0: {
-                items: 1.3,
+                items: 1,
+                stagePadding: 90,
             },
             600: {
-                items: 2.5,
+                items: 3,
             },
             1000: {
                 items: 4,
@@ -27,10 +27,12 @@ $(document).ready(function () {
         ...carousel_config,
         responsive: {
             0: {
-                items: 1.3,
+                items: 1,
+                stagePadding: 50,
             },
             600: {
-                items: 2.5,
+                items: 2,
+                stagePadding: 30,
             },
             1000: {
                 items: 3,
