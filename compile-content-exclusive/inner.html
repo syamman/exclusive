@@ -1,15 +1,18 @@
 <link rel="stylesheet" href="./content-exclusive.css">
+<script src="./vimeo-player.js"></script>
+
 <div class="content-exclusive-innner-page">
     <section class="recepi-info">
         <div class="container">
             <div class="row cust-grid">
                 <div class="col-xs-12 col-md-6 mb-2">
-                    <img src="/assets/img/landing/recipe-rendang.jpg" alt="Resipi Rendang" width="100%">
+                    <img src="./assets/img/landing/recipe-rendang.jpg" alt="Resipi Rendang"
+                        width="100%">
                 </div>
                 <div class="col-xs-12 col-md-6">
                     <h1 class="mb-2">Recipe Name</h1>
                     <div class="recipe-creator mb-2">
-                        <img src="/assets/img/landing/chef-profile-img.png" alt="Chef Profile">
+                        <img src="./assets/img/landing/chef-profile-img.png" alt="Chef Profile">
                         <p>Recipe by Chef Naem<br>for Dear Nestlé</p>
                     </div>
                     <p class="desc mb-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
@@ -39,8 +42,8 @@
                 <div class="col-xs-12 col-md-6">
                     <div class="nutrition-info">
                         <p class="title">Nutrition information per serving:</p>
-                        <p class="kcal"><img src="/assets/img/kcal.svg" alt="" width="15" style="margin-top: -0.25rem;">
-                            380kCal</p>
+                        <p class="kcal"><img src="./assets/img/kcal.svg" alt="" width="15"
+                                style="margin-top: -0.25rem;"> 380kCal</p>
                         <div class="row">
                             <div class="col-xs-4">
                                 <div class="value"><span>16g</span></div>
@@ -64,23 +67,24 @@
         <div class="container">
             <div class="row cust-grid">
                 <!-- <div id="myaccordion"><input class="hidecontent" id="accordion1" type="checkbox" />
-                                        <label for="accordion1">
-                                            <font face="Frutiger LT Std 55 Black"><b>Minggu 1</b></font>
-                                        </label>
-                                        <div class="content hidecontent">
-                                            <p><b>Klik pautan dibawah untuk menyemak Senarai Pemenang:</b><br />
-                                                <a href="/sites/default/files/2021-08/pemenang-vaksin/Vaksin_Winnerlist_W1-B1_060821.pdf"
-                                                    target="_blank">Kumpulan 1 </a><br />
-                                                <a href="/sites/default/files/2021-08/pemenang-vaksin/Vaksin_Winnerlist_W1-B2_110821.pdf"
-                                                    target="_blank">Kumpulan 2 </a><br />
-                                                <a href="/sites/default/files/2021-08/pemenang-vaksin/Vaksin_Winnerlist_W1-B3_130821.pdf"
-                                                    target="_blank">Kumpulan 3 </a>
-                                            </p>
-                                        </div>
-                                    </div> -->
+                    <label for="accordion1">
+                        <font face="Frutiger LT Std 55 Black"><b>Minggu 1</b></font>
+                    </label>
+                    <div class="content hidecontent">
+                        <p><b>Klik pautan dibawah untuk menyemak Senarai Pemenang:</b><br />
+                            <a href="/sites/default/files/2021-08/pemenang-vaksin/Vaksin_Winnerlist_W1-B1_060821.pdf"
+                                target="_blank">Kumpulan 1 </a><br />
+                            <a href="/sites/default/files/2021-08/pemenang-vaksin/Vaksin_Winnerlist_W1-B2_110821.pdf"
+                                target="_blank">Kumpulan 2 </a><br />
+                            <a href="/sites/default/files/2021-08/pemenang-vaksin/Vaksin_Winnerlist_W1-B3_130821.pdf"
+                                target="_blank">Kumpulan 3 </a>
+                        </p>
+                    </div>
+                </div> -->
                 <div class="col-xs-12 col-md-6 mb-2">
-                    <div class="pink-bg" id="myaccordion"><input style="display: none;" id="accordion1"
-                            type="checkbox" /><label for="accordion1">Ingredients</label>
+                    <div class="pink-bg" id="myaccordion"><input style="display: none;"
+                            id="accordion1" type="checkbox" /><label
+                            for="accordion1">Ingredients</label>
                         <div class="content hidecontent text-center">
                             <table>
                                 <tr>
@@ -126,8 +130,9 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 mb-2">
-                    <div class="pink-bg" id="myaccordion"><input style="display: none;" id="accordion2"
-                            type="checkbox" /><label for="accordion2">Directions</label>
+                    <div class="pink-bg" id="myaccordion"><input style="display: none;"
+                            id="accordion2" type="checkbox" /><label
+                            for="accordion2">Directions</label>
                         <div class="content hidecontent">
                             <p class="title">1. Lorem ipsum</p>
                             <p>- Lorem ipsum dolor sit amet, consetetur sadip
@@ -164,12 +169,20 @@
                         diam nonumy
                         eirmod tempor <br class="visible-md-block visible-lg-block"> invidunt ut
                         labore et dolore magna aliquyam erat, sed diam
-                        voluptua. At vero eos et accusam et <br class="visible-md-block visible-lg-block"> justo duo
-                        dolores et ea
+                        voluptua. At vero eos et accusam et <br
+                            class="visible-md-block visible-lg-block"> justo duo dolores et ea
                         rebum. Stet
                         clita kasd gubergren, no sea.</p>
 
-                    <img src="/assets/img/landing/video-thumbnail.png" alt="Recipe Video Thumbnail" width="100%">
+
+                    <div class="wrapper">
+                        <iframe class="video" id="myvideo" width="960" height="705"
+                            src="https://player.vimeo.com/video/403530213" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                        <div class="playButton" id="playButton"></div>
+                    </div>
+                    <!-- <img src="./assets/img/landing/video-thumbnail.png" alt="Recipe Video Thumbnail"
+                        width="100%"> -->
                 </div>
             </div>
         </div>
@@ -186,27 +199,33 @@
                     <div class="owl-slider" style="overflow: hidden;">
                         <div class="text-center" id="carousel-product-used">
                             <div class="item">
-                                <img src="/assets/img/landing/product-used-thumb.png" alt="" width="100%">
+                                <img src="./assets/img/landing/product-used-thumb.png" alt=""
+                                    width="100%">
                                 <a href="" class="button">Buy now</a>
                             </div>
                             <div class="item">
-                                <img src="/assets/img/landing/product-used-thumb.png" alt="" width="100%">
+                                <img src="./assets/img/landing/product-used-thumb.png" alt=""
+                                    width="100%">
                                 <a href="" class="button">Buy now</a>
                             </div>
                             <div class="item">
-                                <img src="/assets/img/landing/product-used-thumb.png" alt="" width="100%">
+                                <img src="./assets/img/landing/product-used-thumb.png" alt=""
+                                    width="100%">
                                 <a href="" class="button">Buy now</a>
                             </div>
                             <div class="item">
-                                <img src="/assets/img/landing/product-used-thumb.png" alt="" width="100%">
+                                <img src="./assets/img/landing/product-used-thumb.png" alt=""
+                                    width="100%">
                                 <a href="" class="button">Buy now</a>
                             </div>
                             <div class="item">
-                                <img src="/assets/img/landing/product-used-thumb.png" alt="" width="100%">
+                                <img src="./assets/img/landing/product-used-thumb.png" alt=""
+                                    width="100%">
                                 <a href="" class="button">Buy now</a>
                             </div>
                             <div class="item">
-                                <img src="/assets/img/landing/product-used-thumb.png" alt="" width="100%">
+                                <img src="./assets/img/landing/product-used-thumb.png" alt=""
+                                    width="100%">
                                 <a href="" class="button">Buy now</a>
                             </div>
                         </div>
@@ -227,8 +246,8 @@
                     <div class="owl-slider" style="overflow: hidden;">
                         <div class="" id="carousel-other-recipe">
                             <div class="item">
-                                <img src="/assets/img/landing/recipe-rendang.jpg" alt="Recipe Rendang" width="100%">
-                                <br><br>
+                                <img src="./assets/img/landing/recipe-rendang.jpg"
+                                    alt="Recipe Rendang" width="100%"> <br><br>
                                 <p class="text-pink"><b>Recipe Name</b></p>
                                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -236,8 +255,8 @@
                                 <a href="" class="button">Get recipe</a>
                             </div>
                             <div class="item">
-                                <img src="/assets/img/landing/recipe-rendang.jpg" alt="Recipe Rendang" width="100%">
-                                <br><br>
+                                <img src="./assets/img/landing/recipe-rendang.jpg"
+                                    alt="Recipe Rendang" width="100%"> <br><br>
                                 <p class="text-pink"><b>Recipe Name</b></p>
                                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -245,8 +264,8 @@
                                 <a href="" class="button">Get recipe</a>
                             </div>
                             <div class="item">
-                                <img src="/assets/img/landing/recipe-rendang.jpg" alt="Recipe Rendang" width="100%">
-                                <br><br>
+                                <img src="./assets/img/landing/recipe-rendang.jpg"
+                                    alt="Recipe Rendang" width="100%"> <br><br>
                                 <p class="text-pink"><b>Recipe Name</b></p>
                                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -254,8 +273,8 @@
                                 <a href="" class="button">Get recipe</a>
                             </div>
                             <div class="item">
-                                <img src="/assets/img/landing/recipe-rendang.jpg" alt="Recipe Rendang" width="100%">
-                                <br><br>
+                                <img src="./assets/img/landing/recipe-rendang.jpg"
+                                    alt="Recipe Rendang" width="100%"> <br><br>
                                 <p class="text-pink"><b>Recipe Name</b></p>
                                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -286,45 +305,10 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            var carousel_config = {
-                autoHeight: true,
-                pagination: true,
-                nav: false,
-                dots: true,
-            };
-            var owl = $("#carousel-product-used");
-            owl.owlCarousel({
-                ...carousel_config,
-                responsive: {
-                    0: {
-                        items: 1.3,
-                    },
-                    600: {
-                        items: 2.5,
-                    },
-                    1000: {
-                        items: 4,
-                    },
-                },
-            });
-            var owl2 = $("#carousel-other-recipe");
-            owl2.owlCarousel({
-                ...carousel_config,
-                responsive: {
-                    0: {
-                        items: 1.3,
-                    },
-                    600: {
-                        items: 2.5,
-                    },
-                    1000: {
-                        items: 3,
-                    },
-                },
-            });
-            console.log('end carousel')
+    <script src="./content-exclusive.js"></script>
+    <script>
+        $("document").ready(function () {
+            playVideo();
         });
     </script>
 </div>
