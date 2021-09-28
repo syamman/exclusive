@@ -65,8 +65,25 @@ section.auth p.title {
 .content-exclusive section.chef-info .chef-list {
     margin-bottom: 3rem;
     overflow-x: auto;
-    padding: 0 15px 8px;
+    padding: 0 15px 1rem;
 }
+
+.content-exclusive section.chef-info .chef-list::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 1px;
+    background-color: #f8f4f2;
+}
+
+.content-exclusive section.chef-info .chef-list::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+  
+.content-exclusive section.chef-info .chef-list::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #f39eb6;
+
+}
+
 .content-exclusive section.chef-info .chef-list .cust-grid.justify-center {
     min-width: fit-content;
     flex-flow: nowrap;
