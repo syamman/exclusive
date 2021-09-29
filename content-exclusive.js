@@ -21,8 +21,7 @@ $(document).ready(function () {
                 stagePadding: 30,
             },
             1000: {
-                items: 6,
-                stagePadding: 10,
+                items: 7,
             },
         },
     });
@@ -62,10 +61,10 @@ $(document).ready(function () {
 
     $("#carousel-chef").css("display", "block");
 
-    onChefSelect();
+    // onChefSelect();
     closeAuthNoti();
 
-    chefDetail("Chef Naem");
+    // chefDetail("Chef Naem");
 });
 
 function closeAuthNoti() {
