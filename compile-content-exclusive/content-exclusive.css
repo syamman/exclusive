@@ -109,25 +109,35 @@ section.auth p.title {
     width: 6rem;
     border-radius: 50%;
     border: 2px solid var(--grey-not-active-color);
-    opacity: 0.45;
-}
-
-.content-exclusive section.chef-info .chef-list .active .chef-img {
-    border: 3px solid var(--pink-color);
-    opacity: 1;
 }
 
 .content-exclusive section.chef-info .chef-list .chef-name {
     font-weight: 600;
-    opacity: 0.45;
-    white-space: nowrap;
 }
 
-.content-exclusive section.chef-info .chef-list .active .chef-name {
+.content-exclusive section.chef-info .chef-list .chef_select {
+    cursor: pointer;
+    opacity: 0.45;
+}
+
+.content-exclusive section.chef-info .chef-list .chef_select.active {
+    opacity: 1!important;
+    cursor: not-allowed;
+    user-select: none;
+}
+
+.content-exclusive section.chef-info .chef-list .chef_select:hover {
+    opacity: 0.75;
+}
+
+.content-exclusive section.chef-info .chef-list .chef_select.active .chef-img {
+    border: 3px solid var(--pink-color);
+}
+
+.content-exclusive section.chef-info .chef-list .chef_select.active .chef-name {
     font-weight: 700;
-    opacity: 1;
     color: var(--pink-color);
-    border-bottom: 5px solid var(--pink-color);
+    border-bottom: 3px solid var(--pink-color);
 }
 
 .content-exclusive section.chef-info .chef-bio {
