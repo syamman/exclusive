@@ -272,6 +272,9 @@ a.button::after {
 .content-exclusive-innner-page section.recepi-info {
     padding: 3rem 0;
 }
+img.recipe-img {
+    border-radius: 0.5rem;
+}
 
 .content-exclusive-innner-page section.recepi-info h1 {
     color: var(--pink-color);
@@ -342,21 +345,37 @@ a.button::after {
 }
 
 @media (min-width: 1200px) {
+    .content-exclusive-innner-page section.recepi-info .recipe-desc {
+        height: calc(100% - 7.6rem);
+        overflow: hidden;
+    }
+    .content-exclusive-innner-page section.recepi-info .recipe-desc p.desc {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .content-exclusive-innner-page section.recepi-info .recipe-desc .recipe-creator {
+        margin-bottom: 1rem;
+    }
     .content-exclusive-innner-page section.recepi-info .nutrition-info {
         margin-top: -6.6rem;
     }
 }
 
 @media (max-width: 768px) {
-    .content-exclusive-innner-page section.recepi-info .recipe-time,
-    .content-exclusive-innner-page section.recepi-info .nutrition-info {
+    .content-exclusive-innner-page section.recepi-info .recipe-time {
         margin-bottom: 2rem;
+    }
+    .content-exclusive-innner-page section.recepi-info .nutrition-info {
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 }
 
 .content-exclusive-innner-page section {
     color: var(--grey-color);
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 @media (max-width: 768px) {
@@ -415,10 +434,17 @@ a.button::after {
 }
 
 /* End of Inner Page */
-
-.mb-2 {
-    margin-bottom: 2rem;
+@media (min-width: 768px) {
+    .mb-2 {
+        margin-bottom: 1rem;
+    }
 }
+@media (max-width: 768px) {
+    .mb-2 {
+        margin-bottom: 2rem;
+    }
+}
+
 
 .cust-grid {
     display: flex;
@@ -437,9 +463,8 @@ a.button::after {
     float: none;
 }
 
-
 .content-exclusive-innner-page section.recipe-direction #myaccordion {
-    /* height: 100%; */
+    height: 100%;
     border-radius: 5px;
 }
 .content-exclusive-innner-page section.recipe-direction #myaccordion label {
